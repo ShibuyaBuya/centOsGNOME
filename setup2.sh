@@ -5,6 +5,10 @@ sudo systemctl enable vncserver@:4.service
 sudo firewall-cmd --permanent --zone=public --add-port=5904/tcp 
 sudo firewall-cmd --reload
 vncserver :4
+yum install liberation-fonts
+yum install vulkan
+yum install wget
+
 sudo systemctl daemon-reload
 sudo systemctl restart vncserver@:4.service 
 
