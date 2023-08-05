@@ -1,3 +1,4 @@
 #!/bin/bash
 sudo yum groupinstall -y "GNOME Desktop"
-echo "Need reboot!"
+chmod +x setup.sh
+echo "Need reboot! After reboot run ./setup.sh"
